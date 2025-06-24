@@ -17,6 +17,7 @@ import Navbar from "../component/navbar";
 import OurServices from "../component/OurServices";
 import Areas from "../component/Areas";
 import Process from "../component/Process";
+import WhyChooseUs from "../component/WhyChooseUs";
 
 /**
  * Index Component
@@ -84,7 +85,7 @@ export default function Index() {
                   smooth={true}
                   duration={500}
                   to="contact"
-                  className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md cursor-pointer px-6 py-3 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center text-base font-medium"
+                  className="btn bg-green-600 hover:bg-green-700 border-green-600 hover:border-blue-700 text-white rounded-md cursor-pointer px-6 py-3 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center text-base font-medium"
                 >
                   Request a Quote
                 </Link>
@@ -99,9 +100,10 @@ export default function Index() {
         {/* Service section */}
         {/* <Services /> */}
         <OurServices />
-        <Process />
-        <Areas />
 
+        <WhyChooseUs />
+        <Areas />
+        <Process />
         {/* Portfolio section */}
         {/* <Portfolio /> */}
 

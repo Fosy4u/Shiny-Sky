@@ -47,7 +47,7 @@ export default function About() {
 
             <div className="lg:col-span-7">
               <div className="lg:ms-7">
-                <h6 className="text-orange-600 text-base font-medium uppercase mb-2">
+                <h6 className="text-blue-500 text-base font-medium uppercase mb-2">
                   Who We Are ?
                 </h6>
 

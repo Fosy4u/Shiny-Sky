@@ -10,7 +10,7 @@ export default function Contact() {
       >
         <div className="container">
           <div className="grid grid-cols-1 pb-8 text-center">
-            <h6 className="text-orange-600 text-base font-medium uppercase mb-2">
+            <h6 className="text-blue-500 text-base font-medium uppercase mb-2">
               Contact us
             </h6>
             <h3 className="mb-4 md:text-2xl text-xl font-medium dark:text-white">
@@ -26,7 +26,13 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-6">
             <div className="lg:col-span-8">
               <div className="p-6 rounded-md shadow bg-white dark:bg-slate-900">
-                <form>
+                <form
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                netlify
+                name="contact"
+                method="post"
+                >
                   <div className="grid lg:grid-cols-12 lg:gap-6">
                     <div className="lg:col-span-6 mb-5">
                       <input
@@ -72,7 +78,7 @@ export default function Contact() {
                     type="submit"
                     id="submit"
                     name="send"
-                    className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md h-11 justify-center flex items-center"
+                    className="btn bg-green-600 hover:bg-green-700 border-green-600 hover:border-green-700 text-white rounded-md h-11 justify-center flex items-center"
                   >
                     Send Message
                   </button>

@@ -62,7 +62,7 @@ export default function Review() {
     <>
       <section className="py-16 bg-gray-50 dark:bg-slate-800" id="testimonial">
         <div className="container mx-auto">
-          <h2 className="text-center text-3xl font-bold mb-8">
+          <h2 className="text-center text-blue-500 text-2xl font-bold mb-8">
             What Our Clients Say
           </h2>
           <TinySlider settings={settings}>
@@ -72,7 +72,7 @@ export default function Review() {
                   <p className="text-slate-700 dark:text-slate-300 mb-4 italic h-[8rem]">
                     {item.review}
                   </p>
-                  <h5 className="text-orange-600 font-semibold">{item.name}</h5>
+                  <h5 className="text-blue-600 font-semibold">{item.name}</h5>
                 </div>
               </div>
             ))}

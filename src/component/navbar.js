@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { Link as Link2 } from "react-router-dom";
-import Logo from "../assets/images/main-logo.png";
+import Logo from "../assets/images/Shiny-Sky-Wordmark.png";
+import LogoWhite from "../assets/images/Shiny-Sky-Wordmark-white.png";
+// g
 
 export default function Navbar({ navdark }) {
   const [isOpen, setMenu] = useState(true);
+  const [scrollTreshold, setScrollThreshold] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", windowScroll);
     window.scrollTo(0, 0);
@@ -24,8 +27,10 @@ export default function Navbar({ navdark }) {
       document.documentElement.scrollTop >= 50
     ) {
       navbar.classList.add("is-sticky");
+      setScrollThreshold(true);
     } else {
       navbar.classList.remove("is-sticky");
+      setScrollThreshold(false);
     }
   }
   return (
@@ -35,7 +40,7 @@ export default function Navbar({ navdark }) {
           <Link2 className="navbar-brand" to="/">
             <span>
               <img
-                src={Logo}
+                src={scrollTreshold ? Logo : LogoWhite}
                 className="inline-block w-[7rem] h-[7rem]  rounded-md"
                 alt=""
               />
@@ -43,71 +48,7 @@ export default function Navbar({ navdark }) {
           </Link2>
 
           <div className="nav-icons flex items-center lg_992:order-2 ms-auto">
-            {/* {navdark && (
-                     <ul className="list-none menu-social mb-0">
-                        <li className="inline ms-1">
-                            <Link2 to="#" className="btn btn-sm btn-icon rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white">
-                                <i className="uil uil-github"></i>
-                            </Link2>
-                        </li>
-                     <li className="inline ms-1">
-                         <Link2 to="#" className="btn btn-sm btn-icon rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white">
-                                <i className="uil uil-twitter"></i>
-                         </Link2>
-                     </li>
-                     <li className="inline ms-1">
-                         <Link2 to="#" className="btn btn-sm btn-icon rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white">
-                                <i className="uil uil-instagram"></i>
-                         </Link2>
-                     </li>
-                 </ul>
-                )} */}
-            {/* {!navdark && (
-                    <ul className="list-none menu-social mb-0">
-                    <li className="inline ms-1">
-                        <Link2 to="#">
-                        <span className="login-btn-primary">
-                            <span className="btn btn-sm btn-icon rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white">
-                            <i className="uil uil-github"></i>
-                            </span>
-                        </span>
-                        <span className="login-btn-light">
-                            <span className="btn btn-sm btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700">
-                            <i className="uil uil-github"></i>
-                            </span>
-                        </span>
-                        </Link2>
-                    </li>
-                    <li className="inline ms-1">
-                        <Link2 to="#">
-                        <span className="login-btn-primary">
-                            <span className="btn btn-sm btn-icon rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white">
-                            <i className="uil uil-twitter"></i>
-                            </span>
-                        </span>
-                        <span className="login-btn-light">
-                            <span className="btn btn-sm btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700">
-                            <i className="uil uil-twitter"></i>
-                            </span>
-                        </span>
-                        </Link2>
-                    </li>
-                    <li className="inline ms-1">
-                        <Link2 to="#">
-                        <span className="login-btn-primary">
-                            <span className="btn btn-sm btn-icon rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white">
-                            <i className="uil uil-instagram"></i>
-                            </span>
-                        </span>
-                        <span className="login-btn-light">
-                            <span className="btn btn-sm btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700">
-                            <i className="uil uil-instagram"></i>
-                            </span>
-                        </span>
-                        </Link2>
-                    </li>
-                    </ul>
-                )} */}
+            
             <button
               type="button"
               className="collapse-btn inline-flex items-center ms-3 text-dark dark:text-white lg_992:hidden"
@@ -136,7 +77,7 @@ export default function Navbar({ navdark }) {
                 smooth={true}
                 duration={500}
               >
-                <span className="nav-link">Home</span>
+                <span className="nav-link font-bold">Home</span>
               </Link>
               <Link
                 className="nav-item"
@@ -146,7 +87,7 @@ export default function Navbar({ navdark }) {
                 duration={500}
                 to="about"
               >
-                <span className="nav-link">About us</span>
+                <span className="nav-link font-bold">About us</span>
               </Link>
               <Link
                 className="nav-item"
@@ -156,7 +97,7 @@ export default function Navbar({ navdark }) {
                 smooth={true}
                 duration={500}
               >
-                <span className="nav-link">Services</span>
+                <span className="nav-link font-bold">Services</span>
               </Link>
               {/* <Link
                 className="nav-item"
@@ -176,10 +117,9 @@ export default function Navbar({ navdark }) {
                 smooth={true}
                 duration={500}
               >
-                <span className="nav-link">Review</span>
+                <span className="nav-link font-semibold">Review</span>
               </Link>
-              
-             
+
               <Link
                 className="nav-item"
                 to="contact"
@@ -188,7 +128,7 @@ export default function Navbar({ navdark }) {
                 smooth={true}
                 duration={500}
               >
-                <span className="nav-link">Contact us</span>
+                <span className="nav-link font-semibold">Contact us</span>
               </Link>
             </ul>
           </div>

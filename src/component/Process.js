@@ -38,7 +38,7 @@ const Process = () => {
     <div>
       <section className="py-16 bg-gray-50 dark:bg-slate-800" id="process">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Our Process</h2>
+          <h2 className="text-2xl font-bold mb-8 text-blue-500">Our Process</h2>
           <div className="grid grid-cols-1 mt-8">
             <div className="timeline relative">
               {steps.map((step, index) => (
