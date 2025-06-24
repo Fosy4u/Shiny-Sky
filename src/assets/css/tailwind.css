@@ -971,26 +971,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   display: block;
   padding: 0.75rem;
   --tw-text-opacity: 1;
-  color: rgb(127, 236, 52, 1);
+  color: rgb(52, 153, 236, 1);
 }
 .navbar .navigation .navbar-nav .nav-link:hover{
   --tw-text-opacity: 1;
-  color: rgb(127, 236, 52, 1);
+  color: rgb(52, 153, 236, 1);
 }
 :is(.dark .navbar .navigation .navbar-nav .nav-link){
-  color: rgb(127, 236, 52, 1);
+  color: rgb(52, 153, 236, 1);
 }
 :is(.dark .navbar .navigation .navbar-nav .nav-link:hover){
   --tw-text-opacity: 1;
-  color: rgb(127, 236, 52, 1);
+  color: rgb(52, 153, 236, 1);
 }
 .navbar .navigation .navbar-nav .active .nav-link{
   --tw-text-opacity: 1;
-  color: rgb(127, 236, 52, 1);
+  color: rgb(52, 153, 236, 1);
 }
 :is(.dark .navbar .navigation .navbar-nav .active .nav-link){
   --tw-text-opacity: 1;
-  color: rgb(127, 236, 52, 1);
+  color: rgb(52, 153, 236, 1);
 }
 .navbar .navbar-brand{
   -webkit-margin-end: 3rem;
@@ -1083,11 +1083,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   }
   .navbar .navigation .navbar-nav.nav-light .nav-link:hover{
     --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    color: rgb(52, 153, 236, 1)
   }
   .navbar .navigation .navbar-nav.nav-light .active .nav-link{
     --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    color: rgb(52, 153, 236, 1)
   }
   .navbar .nav-icons .collapse-btn{
     display: none;
@@ -1098,15 +1098,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   }
   .navbar.is-sticky .navbar-nav .nav-link{
     --tw-text-opacity: 1;
-    color: rgb(15 23 42 / var(--tw-text-opacity));
+    color: rgb(52, 153, 236, 1)
   }
   .navbar.is-sticky .navbar-nav .active .nav-link{
     --tw-text-opacity: 1;
-    color: rgb(234 88 12 / var(--tw-text-opacity));
+    color: rgb(52, 153, 236, 1)
   }
   .navbar.is-sticky .navbar-nav.nav-light .nav-link{
     --tw-text-opacity: 1;
-    color: rgb(15 23 42 / var(--tw-text-opacity));
+    color: rgb(52, 153, 236, 1);
   }
   .navbar.is-sticky .navbar-nav.nav-light .nav-link:hover{
     --tw-text-opacity: 1;
@@ -1154,7 +1154,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   }
   .navbar .navigation .navbar-nav .active .nav-link{
     --tw-text-opacity: 1;
-    color: rgb(234 88 12 / var(--tw-text-opacity));
+    color: rgb(52, 153, 236, 1)
   }
   .navbar .navigation .navbar-nav .menu-social{
     margin-bottom: 1.25rem !important;
@@ -1182,7 +1182,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   width: auto;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+  background-color: rgb(52, 153, 236, 1);
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 300ms;
