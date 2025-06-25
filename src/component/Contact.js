@@ -33,6 +33,7 @@ export default function Contact() {
                 name="contact"
                 method="post"
                 >
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="grid lg:grid-cols-12 lg:gap-6">
                     <div className="lg:col-span-6 mb-5">
                       <input
@@ -67,8 +68,8 @@ export default function Contact() {
 
                     <div className="mb-5">
                       <textarea
-                        name="comments"
-                        id="comments"
+                        name="message"
+                        id="message"
                         className="form-input textarea h-28"
                         placeholder="Message :"
                       ></textarea>
