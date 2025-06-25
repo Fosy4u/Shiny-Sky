@@ -41,7 +41,12 @@ export default function Navbar({ navdark }) {
             <span>
               <img
                 src={scrollTreshold ? Logo : LogoWhite}
-                className="inline-block w-[7rem] h-[7rem]  rounded-md"
+                className="inline-block w-[7rem] h-[7rem]  rounded-md hidden lg:inline-block"
+                alt=""
+              />
+              <img
+                src={ Logo }
+                className="inline-block w-[7rem] h-[7rem]  rounded-md lg:hidden"
                 alt=""
               />
             </span>
