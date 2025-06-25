@@ -1106,7 +1106,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   }
   .navbar.is-sticky .navbar-nav.nav-light .nav-link{
     --tw-text-opacity: 1;
-    color: rgb(52, 153, 236, 1);
+    
+    color: gray
   }
   .navbar.is-sticky .navbar-nav.nav-light .nav-link:hover{
     --tw-text-opacity: 1;
