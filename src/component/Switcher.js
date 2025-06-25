@@ -97,7 +97,7 @@ export default function Switcher() {
           href="https://wa.me/447552672997"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-green-400 text-white w-fit h-fit p-2  m-1 rounded-full shadow-lg hover:bg-green-600 transition duration-300  z-10 opacity-75 text-center leading-9"
+          className="bg-green-400 text-white w-fit h-fit p-2  m-1 rounded-md  hover:bg-green-600 transition duration-300  z-10  text-center leading-9"
         >
           <i className="uil uil-whatsapp text-2xl"></i>
           <span className="sr-only">Chat with us on WhatsApp</span>

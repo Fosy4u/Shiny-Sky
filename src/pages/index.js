@@ -27,7 +27,7 @@ export default function Index() {
   const options = useMemo(
     () => ({
       //window cleaning service
-      strings: ["Shiny", "Clean", "Sparkling", "Crystal Clear", "Streak-Free"],
+      strings: ["Shiny", "Clean", "Sparkling", "Crystal", "Streak-Free"],
       typeSpeed: 50,
       backSpeed: 30,
       loop: true,
