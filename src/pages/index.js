@@ -55,19 +55,18 @@ export default function Index() {
           <div className="absolute inset-0 bg-black opacity-80"></div>
           <div className="container relative">
             <div className="grid grid-cols-1 mt-12">
-              <h4 className="text-white lg:text-5xl text-2xl lg:leading-normal leading-normal font-medium mb-7 position-relative">
-                We are here <br />
-                To Make your Windows{" "}
+              <h4 className="text-white lg:text-5xl text-xl lg:leading-normal leading-normal font-medium mb-7 position-relative">
+                We are here to <br />
+                 Make your Windows{" "}
                 <span
                   ref={typrdRef}
                   className="typewrite relative text-type-element"
                   id="typed"
                   data-period="2000"
-                  data-type='["Personal","Secure","Affordable","Accessible","Reliable"]'
                 ></span>
               </h4>
 
-              <p className="text-slate-300 mb-0 max-w-2xl text-lg">
+              <p className="text-slate-300 mb-0 max-w-2xl text-md lg:text-lg">
                 All frames, sills, and tracks are cleaned with every window
                 cleaning service.
               </p>
