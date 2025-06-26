@@ -10,7 +10,7 @@ const settings = {
   rewind: true,
   autoplay: true,
   autoplayButtonOutput: false,
-  autoplayTimeout: 3000,
+  autoplayTimeout: 10000,
   navPosition: "bottom",
   speed: 400,
   controlsText: [
@@ -55,6 +55,11 @@ export default function Review() {
       name: "Ola",
       review:
         "My window looks new again. Now, I would want my sofit and fascia cleaned as well. Please book me in for next week.",
+    },
+    {
+      id: "6",
+      name: "Tracy",
+      review: "Thanks Foster. Lovely job! All paid",
     },
   ];
 
