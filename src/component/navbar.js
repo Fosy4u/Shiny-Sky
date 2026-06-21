@@ -42,18 +42,17 @@ export default function Navbar({ navdark }) {
               <img
                 src={scrollTreshold ? Logo : LogoWhite}
                 className="inline-block w-[10rem]   rounded-md hidden lg:inline-block"
-                alt=""
+                alt="Shiny Sky Window Cleaning logo"
               />
               <img
-                src={ Logo }
+                src={Logo}
                 className="inline-block w-[10rem]   rounded-md lg:hidden"
-                alt=""
+                alt="Shiny Sky Window Cleaning logo"
               />
             </span>
           </Link2>
 
           <div className="nav-icons flex items-center lg_992:order-2 ms-auto">
-            
             <button
               type="button"
               className="collapse-btn inline-flex items-center ms-3 text-dark dark:text-white lg_992:hidden"

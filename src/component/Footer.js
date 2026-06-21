@@ -12,7 +12,11 @@ export default function Footer() {
           <div className="grid md:grid-cols-12 items-center">
             <div className="md:col-span-3">
               <Link to="#" className="logo-footer">
-                <img src={LogoLight} className="md:ms-0 mx-auto w-32" alt="" />
+                <img
+                  src={LogoLight}
+                  className="md:ms-0 mx-auto w-32"
+                  alt="Shiny Sky Window Cleaning logo"
+                />
               </Link>
             </div>
 
@@ -39,8 +43,6 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-
-           
           </div>
         </div>
       </footer>

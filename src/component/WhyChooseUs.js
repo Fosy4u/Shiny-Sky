@@ -9,7 +9,8 @@ const WhyChooseUs = () => {
           </h2>
           <p className="text-gray-700 dark:text-slate-300 mb-1">
             We are committed to delivering high-quality window cleaning services
-            with an emphasis on professionalism and customer satisfaction.
+            with an emphasis on professionalism and customer satisfaction for
+            customers in Gravesend, Dartford, Kent and nearby areas.
           </p>
           <p className="text-gray-700 dark:text-slate-300 mb-6">
             In the unlikely event that our service does not meet your

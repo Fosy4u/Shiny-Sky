@@ -22,7 +22,7 @@ export default function About() {
                 <img
                   src={AboutImage}
                   className="rounded-lg shadow-lg relative"
-                  alt=""
+                  alt="Professional window cleaner from Shiny Sky at a residential property"
                 />
                 {/* <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                   <Link2
@@ -47,9 +47,9 @@ export default function About() {
 
             <div className="lg:col-span-7">
               <div className="lg:ms-7">
-                <h6 className="text-blue-500 text-base font-medium uppercase mb-2">
+                <h2 className="text-blue-500 text-base font-medium uppercase mb-2">
                   Who We Are ?
-                </h6>
+                </h2>
 
                 <p className="text-slate-700 dark:text-slate-300 max-w-2xl mx-auto mb-4">
                   At Shiny Sky Window Cleaning Limited, we’re committed to

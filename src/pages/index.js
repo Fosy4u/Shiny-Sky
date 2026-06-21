@@ -18,6 +18,7 @@ import OurServices from "../component/OurServices";
 import Areas from "../component/Areas";
 import Process from "../component/Process";
 import WhyChooseUs from "../component/WhyChooseUs";
+import SeoFaq from "../component/SeoFaq";
 
 /**
  * Index Component
@@ -32,7 +33,7 @@ export default function Index() {
       backSpeed: 30,
       loop: true,
     }),
-    []
+    [],
   );
 
   useEffect(() => {
@@ -55,16 +56,16 @@ export default function Index() {
           <div className="absolute inset-0 bg-black opacity-80"></div>
           <div className="container relative">
             <div className="grid grid-cols-1 mt-12">
-              <h4 className="text-white lg:text-5xl text-xl lg:leading-normal leading-normal font-medium mb-7 position-relative">
+              <h1 className="text-white lg:text-5xl text-xl lg:leading-normal leading-normal font-medium mb-7 position-relative">
                 We are here to <br />
-                 Make your Windows{" "}
+                Make your Windows{" "}
                 <span
                   ref={typrdRef}
                   className="typewrite relative text-type-element"
                   id="typed"
                   data-period="2000"
                 ></span>
-              </h4>
+              </h1>
 
               <p className="text-slate-300 mb-0 max-w-2xl text-md lg:text-lg">
                 All frames, sills, and tracks are cleaned with every window
@@ -103,6 +104,7 @@ export default function Index() {
         <WhyChooseUs />
         <Areas />
         <Process />
+        <SeoFaq />
         {/* Portfolio section */}
         {/* <Portfolio /> */}
 

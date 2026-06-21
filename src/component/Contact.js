@@ -14,7 +14,7 @@ export default function Contact() {
               Contact us
             </h6>
             <h3 className="mb-4 md:text-2xl text-xl font-medium dark:text-white">
-              Get In Touch !
+              Get In Touch
             </h3>
 
             <p className="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">
@@ -27,11 +27,11 @@ export default function Contact() {
             <div className="lg:col-span-8">
               <div className="p-6 rounded-md shadow bg-white dark:bg-slate-900">
                 <form
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                netlify
-                name="contact"
-                method="post"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  netlify
+                  name="contact"
+                  method="post"
                 >
                   <input type="hidden" name="form-name" value="contact" />
                   <div className="grid lg:grid-cols-12 lg:gap-6">
@@ -98,7 +98,7 @@ export default function Contact() {
                     <h5 className="text-lg dark:text-white mb-2 font-medium">
                       Phone
                     </h5>
-                    <a href="tel:+152534-468-854" className="text-slate-400">
+                    <a href="tel:+447552672997" className="text-slate-400">
                       +447552672997
                     </a>
                   </div>
@@ -114,8 +114,10 @@ export default function Contact() {
                       Whatsapp
                     </h5>
                     <a
-                      href="mailto:contact@example.com"
+                      href="https://wa.me/447552672997"
                       className="text-slate-400"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       +447552672997
                     </a>
@@ -131,7 +133,7 @@ export default function Contact() {
                       Email
                     </h5>
                     <a
-                      href="mailto:contact@example.com"
+                      href="mailto:shinyskywindowcleaning@gmail.com"
                       className="text-slate-400"
                     >
                       shinyskywindowcleaning@gmail.com
@@ -149,7 +151,7 @@ export default function Contact() {
                       Location
                     </h5>
                     <p className="text-slate-400 mb-2">
-                      33 Waldeck Road, Dartford, UK
+                      4 Ferguson Avenue, Gravesend, DA12 5LX, UK
                     </p>
                   </div>
                 </div>
